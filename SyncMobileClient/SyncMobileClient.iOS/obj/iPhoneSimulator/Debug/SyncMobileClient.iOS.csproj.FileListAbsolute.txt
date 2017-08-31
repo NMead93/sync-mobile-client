@@ -96,3 +96,6 @@ C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileC
 C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileClient\SyncMobileClient.iOS\obj\iPhoneSimulator\Debug\SyncMobileClient.iOS.exe
 C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileClient\SyncMobileClient.iOS\obj\iPhoneSimulator\Debug\SyncMobileClient.iOS.pdb
 C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileClient\SyncMobileClient.iOS\bin\iPhoneSimulator\Debug\SyncMobileClient.dll.mdb
+C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileClient\SyncMobileClient.iOS\bin\iPhoneSimulator\Debug\System.Net.Http.Extensions.dll
+C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileClient\SyncMobileClient.iOS\bin\iPhoneSimulator\Debug\System.Net.Http.Extensions.xml
+C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileClient\SyncMobileClient.iOS\obj\iPhoneSimulator\Debug\SyncMobileClient.iOS.csproj.SyncMobileClient.iOS.exe.config

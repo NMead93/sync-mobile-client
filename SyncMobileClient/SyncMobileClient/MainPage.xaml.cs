@@ -35,6 +35,23 @@ namespace SyncMobileClient
             }
         }
 
+        async void OnAddSelected(object sender, EventArgs e)
+        {
+            var newAddPage = new AddPreferencePage();
+            var newAddViewModel = new AddPreferencePageViewModel();
+            newAddViewModel.Navigation = Navigation;
+            newAddPage.BindingContext = newAddViewModel;
+
+            try
+            {
+                await Navigation.PushAsync(newAddPage);
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
+            }
+        }
+
         protected override async void OnAppearing()
         {
             MainPageViewModel viewModel = new MainPageViewModel();

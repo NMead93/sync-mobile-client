@@ -14,12 +14,8 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <Label Text="Preference Name"/>
-        <Entry x:Name="NameEntry" Text="{Binding PreferenceName}"/>
-        <Label Text="Preference Value"/>
-        <Entry x:Name="ValueEntry" Text="{Binding PreferenceValue}"/>
-        <Button Text="Add Preference" Command="{Binding AddPreferenceCommand}" />
-        <Button Text="NUKE EVERYTHING" Command="{Binding NukeEverythingCommand}" />
+        <Button Text="Add Preference Page" Clicked="OnAddSelected" />
+        <!--<Button Text="Change Last Sync To > 30 days" Command="{Binding ExpiredChangesCommand}" />-->
     </StackLayout>
 
 </ContentPage>

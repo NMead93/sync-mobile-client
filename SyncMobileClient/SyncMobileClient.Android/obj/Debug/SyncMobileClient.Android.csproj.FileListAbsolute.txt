@@ -16,6 +16,8 @@ C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileC
 C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileClient\SyncMobileClient.Android\bin\Debug\SQLitePCLRaw.lib.e_sqlite3.dll
 C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileClient\SyncMobileClient.Android\bin\Debug\SQLitePCLRaw.provider.e_sqlite3.dll
 C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileClient\SyncMobileClient.Android\bin\Debug\SyncMobileClient.dll
+C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileClient\SyncMobileClient.Android\bin\Debug\System.Net.Http.Extensions.dll
+C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileClient\SyncMobileClient.Android\bin\Debug\System.Net.Http.Primitives.dll
 C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileClient\SyncMobileClient.Android\bin\Debug\Xamarin.Android.Support.Animated.Vector.Drawable.dll
 C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileClient\SyncMobileClient.Android\bin\Debug\Xamarin.Android.Support.Design.dll
 C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileClient\SyncMobileClient.Android\bin\Debug\Xamarin.Android.Support.v4.dll
@@ -28,10 +30,8 @@ C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileC
 C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileClient\SyncMobileClient.Android\bin\Debug\Xamarin.Forms.Platform.Android.dll
 C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileClient\SyncMobileClient.Android\bin\Debug\Xamarin.Forms.Platform.dll
 C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileClient\SyncMobileClient.Android\bin\Debug\Xamarin.Forms.Xaml.dll
-C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileClient\SyncMobileClient.Android\bin\Debug\System.Net.Http.Primitives.dll
 C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileClient\SyncMobileClient.Android\bin\Debug\SyncMobileClient.pdb
 C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileClient\SyncMobileClient.Android\bin\Debug\SyncMobileClient.dll.config
-C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileClient\SyncMobileClient.Android\bin\Debug\SyncMobileClient.dll.mdb
 C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileClient\SyncMobileClient.Android\bin\Debug\FormsViewGroup.pdb
 C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileClient\SyncMobileClient.Android\bin\Debug\FormsViewGroup.dll.mdb
 C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileClient\SyncMobileClient.Android\bin\Debug\Newtonsoft.Json.xml
@@ -44,6 +44,8 @@ C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileC
 C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileClient\SyncMobileClient.Android\bin\Debug\Plugin.Connectivity.Abstractions.xml
 C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileClient\SyncMobileClient.Android\bin\Debug\SQLite-net.pdb
 C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileClient\SyncMobileClient.Android\bin\Debug\SQLite-net.xml
+C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileClient\SyncMobileClient.Android\bin\Debug\System.Net.Http.Extensions.xml
+C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileClient\SyncMobileClient.Android\bin\Debug\System.Net.Http.Primitives.xml
 C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileClient\SyncMobileClient.Android\bin\Debug\Xamarin.Forms.Core.pdb
 C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileClient\SyncMobileClient.Android\bin\Debug\Xamarin.Forms.Core.xml
 C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileClient\SyncMobileClient.Android\bin\Debug\Xamarin.Forms.Core.dll.mdb
@@ -52,7 +54,6 @@ C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileC
 C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileClient\SyncMobileClient.Android\bin\Debug\Xamarin.Forms.Xaml.pdb
 C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileClient\SyncMobileClient.Android\bin\Debug\Xamarin.Forms.Xaml.xml
 C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileClient\SyncMobileClient.Android\bin\Debug\Xamarin.Forms.Xaml.dll.mdb
-C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileClient\SyncMobileClient.Android\bin\Debug\System.Net.Http.Primitives.xml
 C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileClient\SyncMobileClient.Android\obj\Debug\SyncMobileClient.Android.csprojResolveAssemblyReference.cache
 C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileClient\SyncMobileClient.Android\obj\Debug\SyncMobileClient.Android.csproj.CoreCompileInputs.cache
 C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileClient\SyncMobileClient.Android\obj\Debug\SyncMobileClient.Android.dll
@@ -67,6 +68,7 @@ C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileC
 C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileClient\SyncMobileClient.Android\obj\Debug\res\values\styles.xml
 C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileClient\SyncMobileClient.Android\obj\Debug\R.cs.flag
 C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileClient\SyncMobileClient.Android\obj\Debug\uploadflags.txt
+C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileClient\SyncMobileClient.Android\bin\Debug\SyncMobileClient.dll.mdb
 C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileClient\SyncMobileClient.Android\bin\Debug\SyncMobileClient.Android.dll.mdb
 C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileClient\SyncMobileClient.Android\obj\Debug\android\assets\FormsViewGroup.dll.mdb
 C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileClient\SyncMobileClient.Android\obj\Debug\android\assets\Plugin.Connectivity.dll.mdb

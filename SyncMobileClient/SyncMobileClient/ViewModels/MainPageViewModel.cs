@@ -12,65 +12,35 @@ using System.Diagnostics;
 using System.Windows.Input;
 using Xamarin.Forms;
 using Plugin.Connectivity;
+using System.Runtime.CompilerServices;
 
 namespace SyncMobileClient.ViewModels
 {
-    public class MainPageViewModel : INotifyPropertyChanged
+    public class MainPageViewModel
     {
         public List<UserPreference> PreferenceList { get; set; }
-        public string PreferenceName { get; set; }
-        public string PreferenceValue { get; set; }
-        public ICommand AddPreferenceCommand { get; set; }
-        public ICommand NukeEverythingCommand { get; set; }
-        public event PropertyChangedEventHandler PropertyChanged;
+        public ICommand ExpiredChangesCommand { get; set; }
 
         public MainPageViewModel()
         {
             PreferenceList = new List<UserPreference>();
-            PreferenceName = "";
-            PreferenceValue = "";
-            NukeEverythingCommand = new Command(NukeEverything);
-            AddPreferenceCommand = new Command(AddPreference);
+            ExpiredChangesCommand = new Command(ChangeToExpired);
+        }
+
+        private async void ChangeToExpired()
+        {
+            await LocalDb.Instance.ExpireLastSync();
         }
 
         public async Task PopulatePreferenceList()
         {
-            if (CrossConnectivity.Current.IsConnected)
-            {
-                await RestService.SyncWithAzure();
-            }
+            await RestService.SyncWithAzure();
 
-            var localListResults = await PreferenceLocalDb.Instance.GetAllPreferences();
-            PreferenceList = localListResults.ToList();
+            var localListResults = await LocalDb.Instance.GetAll("UserPreference");
+            IEnumerable<UserPreference> castedLocalListResults = (IEnumerable<UserPreference>)localListResults;
+            PreferenceList = castedLocalListResults.ToList();
         }
 
-        public async void NukeEverything()
-        {
-            await PreferenceLocalDb.Instance.NukeTables();
-        }
-
-        private async void AddPreference()
-        {
-            UserPreference newCustomer = new UserPreference("Customer", PreferenceName, PreferenceValue);
-            if (CrossConnectivity.Current.IsConnected)
-            {
-                //call restservice
-                await RestService.AddOrDeletePreference(newCustomer, "Add");
-            }
-            await PreferenceLocalDb.Instance.AddPreference(newCustomer);
-
-            await PopulatePreferenceList();
-
-            OnPropertyChanged("PreferenceList");
-        }
-
-        protected virtual void OnPropertyChanged(string propertyName)
-        {
-            var changed = PropertyChanged;
-            if (changed != null)
-            {
-                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-            }
-        }
+        
     }
 }

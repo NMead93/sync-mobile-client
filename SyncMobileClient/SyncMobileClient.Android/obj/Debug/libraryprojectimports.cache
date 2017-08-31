@@ -11,6 +11,8 @@
     <ResolvedResourceDirectory>C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileClient\SyncMobileClient.Android\obj\Debug\__library_projects__\SQLitePCLRaw.provider.e_sqlite3\library_project_imports\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileClient\SyncMobileClient.Android\obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android\library_project_imports\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileClient\SyncMobileClient.Android\obj\Debug\__library_projects__\Xamarin.Forms.Platform\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileClient\SyncMobileClient.Android\obj\Debug\__library_projects__\PCLStorage\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileClient\SyncMobileClient.Android\obj\Debug\__library_projects__\Plugin.Connectivity\library_project_imports\res</ResolvedResourceDirectory>
   </ResolvedResourceDirectories>
   <ResolvedAssetDirectories>
     <ResolvedAssetDirectory>obj\Debug\__library_projects__\PCLStorage\library_project_imports\assets</ResolvedAssetDirectory>
@@ -22,6 +24,8 @@
     <ResolvedAssetDirectory>obj\Debug\__library_projects__\SQLitePCLRaw.provider.e_sqlite3\library_project_imports\assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android\library_project_imports\assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>obj\Debug\__library_projects__\Xamarin.Forms.Platform\library_project_imports\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj\Debug\__library_projects__\PCLStorage\library_project_imports\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj\Debug\__library_projects__\Plugin.Connectivity\library_project_imports\assets</ResolvedAssetDirectory>
   </ResolvedAssetDirectories>
   <ResolvedEnvironmentFiles />
   <ResolvedResourceDirectoryStamps>
@@ -34,5 +38,7 @@
     <ResolvedResourceDirectoryStamp>C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileClient\SyncMobileClient.Android\obj\Debug\__library_projects__\SQLitePCLRaw.provider.e_sqlite3.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileClient\SyncMobileClient.Android\obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileClient\SyncMobileClient.Android\obj\Debug\__library_projects__\Xamarin.Forms.Platform.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileClient\SyncMobileClient.Android\obj\Debug\__library_projects__\PCLStorage.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileClient\SyncMobileClient.Android\obj\Debug\__library_projects__\Plugin.Connectivity.stamp</ResolvedResourceDirectoryStamp>
   </ResolvedResourceDirectoryStamps>
 </Paths>

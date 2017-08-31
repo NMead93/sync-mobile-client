@@ -8,6 +8,8 @@ using System.Net.Http;
 using SyncMobileClient.Models;
 using System.Diagnostics;
 using Plugin.Connectivity;
+using SyncMobileClient.Helpers;
+using SyncMobileClient.SyncEnums;
 
 namespace SyncMobileClient.Data
 {
@@ -25,7 +27,7 @@ namespace SyncMobileClient.Data
 
             try
             {
-                string response = await Client.GetStringAsync("http://a00534e4.ngrok.io/api/Storage/Get");
+                string response = await Client.GetStringAsync("http://1c88b1f3.ngrok.io/api/Storage/GetAllPreferences");
                 List<UserPreference> serverPreferenceList = (List<UserPreference>)JsonConvert.DeserializeObject<IEnumerable<UserPreference>>(response);
 
                 return serverPreferenceList;
@@ -43,31 +45,31 @@ namespace SyncMobileClient.Data
         /// <summary>
         /// Send Post Request to Web Api to add Preference to Table storage
         /// </summary>
-        public static async Task AddOrDeletePreference(UserPreference preference, string operation)
-        {
-            Client = new HttpClient();
-            var preferencePayload = JsonConvert.SerializeObject(preference);
-            var httpContent = new StringContent(preferencePayload, Encoding.UTF8, "application/json");
-            string url = "";
+        //public static async Task AddOrDeletePreference(UserPreference preference, string operation)
+        //{
+        //    Client = new HttpClient();
+        //    var preferencePayload = JsonConvert.SerializeObject(preference);
+        //    var httpContent = new StringContent(preferencePayload, Encoding.UTF8, "application/json");
+        //    string url = "";
 
-            if (operation == "Add")
-            {
-                url = "http://a00534e4.ngrok.io/api/storage/addpreference";
-            }
-            else
-            {
-                url = "http://a00534e4.ngrok.io/api/storage/deletepreference";
-            }
+        //    if (operation == "Add")
+        //    {
+        //        url = "http://1c88b1f3.ngrok.io/api/storage/addpreference";
+        //    }
+        //    else
+        //    {
+        //        url = "http://1c88b1f3.ngrok.io/api/storage/deletepreference";
+        //    }
 
-            try
-            {
-                HttpResponseMessage response = await Client.PostAsync(url, httpContent);
-            }
-            catch (Exception ex)
-            {
-                Debug.WriteLine(ex.Message);
-            }
-        }
+        //    try
+        //    {
+        //        HttpResponseMessage response = await Client.PostAsync(url, httpContent);
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        Debug.WriteLine(ex.Message);
+        //    }
+        //}
 
         //------------------------------------------- END POST REQUESTS ----------------------
 
@@ -79,7 +81,7 @@ namespace SyncMobileClient.Data
 
             try
             {
-                HttpResponseMessage response = await Client.PostAsync("http://a00534e4.ngrok.io/api/storage/updatepreference", httpContent);
+                HttpResponseMessage response = await Client.PostAsync("http://1c88b1f3.ngrok.io/api/storage/updatepreference", httpContent);
             }
             catch (Exception ex)
             {
@@ -92,10 +94,13 @@ namespace SyncMobileClient.Data
 
         public static async Task SyncWithAzure()
         {
+
             if (CrossConnectivity.Current.IsConnected)
             {
-                IEnumerable<CUD> operations = await PreferenceLocalDb.Instance.GetCUD();
-                SyncTime lastSync = await PreferenceLocalDb.Instance.GetLastSync();
+                IEnumerable<CUD> operations = await LocalDb.Instance.GetCUD();
+                SyncTime lastSync = await LocalDb.Instance.GetLastSync();
+                DateTimeOffset updatedSyncTime = DateTimeOffset.Now;
+
                 SyncInfo clientSyncInfo = new SyncInfo(operations, lastSync.LastSyncTime);
 
                 Client = new HttpClient();
@@ -105,10 +110,12 @@ namespace SyncMobileClient.Data
 
                 try
                 {
-                    var response = await Client.PostAsync("http://a00534e4.ngrok.io/api/storage/syncmobile", httpContent);
+                    var response = await Client.PostAsync("http://1c88b1f3.ngrok.io/api/storage/syncmobile", httpContent);
                     String responseContent = await response.Content.ReadAsStringAsync();
-                    IEnumerable<CUD> operationsToPerform = JsonConvert.DeserializeObject<IEnumerable<CUD>>(responseContent);
-                    await PreferenceLocalDb.Instance.SyncServerWithLocal(operationsToPerform);
+                    IEnumerable<CUD> operationsToPerform = JsonConvert.DeserializeObject<IEnumerable<CUD>>(responseContent).OrderBy(operation => operation.OperationTime);
+
+                    DataSyncManager manager = new DataSyncManager(new LocalCUDStore(), new LocalCustomDeserialize(), Enums.DataLocation.Local, updatedSyncTime);
+                    manager.Sync(operationsToPerform);
                 }
                 catch (Exception ex)
                 {

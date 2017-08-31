@@ -31,27 +31,15 @@ namespace SyncMobileClient.ViewModels
         public async void UpdateValue()
         {
             CurrentPreference.PreferenceValue = NewValue;
-
-            if (CrossConnectivity.Current.IsConnected)
-            {
-                //call restservice
-                await RestService.UpdatePreference(CurrentPreference);
-            }
-
-            await PreferenceLocalDb.Instance.UpdatePreference(CurrentPreference.PreferenceName, NewValue);
+            await CurrentPreference.Update();
 
             await Navigation.PopAsync();
         }
 
         public async void DeleteValue()
         {
-            if (CrossConnectivity.Current.IsConnected)
-            {
-                //call restservice
-                await RestService.AddOrDeletePreference(CurrentPreference, "Delete");
-            }
+            await CurrentPreference.Delete();
 
-            await PreferenceLocalDb.Instance.DeletePreference(CurrentPreference.PreferenceName);
             await Navigation.PopAsync();
         }
     }

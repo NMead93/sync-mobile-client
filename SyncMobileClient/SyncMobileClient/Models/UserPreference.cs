@@ -4,16 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using SQLite;
+using SyncMobileClient.Data;
 
 namespace SyncMobileClient.Models
 {
-    [Table("UserPreferences")]
-    public class UserPreference
+    [Table("UserPreference")]
+    public class UserPreference : LocalSyncItem
     {
         [PrimaryKey, AutoIncrement]
         public int Id { get; set; }
-        public string TableName { get; set; }
-        public string CustomerId { get; set; }
         public string PreferenceName { get; set; }
         public string PreferenceValue { get; set; }
 
@@ -25,6 +24,25 @@ namespace SyncMobileClient.Models
             CustomerId = customerId;
             PreferenceName = preferenceName;
             PreferenceValue = preferenceValue;
+        }
+
+        protected override bool IsEqualImp(ISyncItem otherItem)
+        {
+            UserPreference castedOtherItem = (UserPreference)otherItem;
+            return (PreferenceName == castedOtherItem.PreferenceName) && (PreferenceValue == castedOtherItem.PreferenceValue);
+        }
+
+        protected override async Task UpdateImp()
+        {
+            UserPreference queriedPreference = await LocalDb.Instance.GetPreference(PreferenceName);
+            queriedPreference.PreferenceValue = PreferenceValue;
+
+            await LocalDb.Instance.UpdateSyncItem(this);
+        }
+
+        protected override async Task<ISyncItem> GetLocalItemCopyImp()
+        {
+            return await LocalDb.Instance.GetPreference(PreferenceName);
         }
     }
 }

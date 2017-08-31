@@ -16,7 +16,7 @@ namespace SyncMobileClient
             InitializeComponent();
 
             string path = FileSystem.Current.LocalStorage.Path + "/Customer2.db3";
-            PreferenceLocalDb.Initialize(path);
+            LocalDb.Initialize(path);
 
             MainPage = new NavigationPage(new MainPage());
         }

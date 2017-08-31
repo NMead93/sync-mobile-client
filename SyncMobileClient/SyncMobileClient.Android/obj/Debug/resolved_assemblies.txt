@@ -11,6 +11,8 @@ C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileC
 C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileClient\SyncMobileClient.Android\obj\Debug\android\assets\SQLitePCLRaw.core.dll
 C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileClient\SyncMobileClient.Android\obj\Debug\android\assets\SQLitePCLRaw.lib.e_sqlite3.dll
 C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileClient\SyncMobileClient.Android\obj\Debug\android\assets\SQLitePCLRaw.provider.e_sqlite3.dll
+C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileClient\SyncMobileClient.Android\obj\Debug\android\assets\System.Net.Http.Extensions.dll
+C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileClient\SyncMobileClient.Android\obj\Debug\android\assets\System.Net.Http.Primitives.dll
 C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileClient\SyncMobileClient.Android\obj\Debug\android\assets\Xamarin.Android.Support.Animated.Vector.Drawable.dll
 C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileClient\SyncMobileClient.Android\obj\Debug\android\assets\Xamarin.Android.Support.Design.dll
 C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileClient\SyncMobileClient.Android\obj\Debug\android\assets\Xamarin.Android.Support.v4.dll
@@ -65,7 +67,8 @@ C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileC
 C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileClient\SyncMobileClient.Android\obj\Debug\android\assets\System.Reflection.Primitives.dll
 C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileClient\SyncMobileClient.Android\obj\Debug\android\assets\System.Text.Encoding.Extensions.dll
 C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileClient\SyncMobileClient.Android\obj\Debug\android\assets\System.Collections.Concurrent.dll
-C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileClient\SyncMobileClient.Android\obj\Debug\android\assets\System.ComponentModel.dll
 C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileClient\SyncMobileClient.Android\obj\Debug\android\assets\System.Runtime.InteropServices.dll
+C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileClient\SyncMobileClient.Android\obj\Debug\android\assets\System.Net.Primitives.dll
+C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileClient\SyncMobileClient.Android\obj\Debug\android\assets\System.ComponentModel.dll
 C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileClient\SyncMobileClient.Android\obj\Debug\android\assets\Mono.Security.dll
 C:\Users\Nick\documents\visual studio 2017\Projects\SyncMobileClient\SyncMobileClient\SyncMobileClient.Android\obj\Debug\android\assets\System.Diagnostics.Tools.dll

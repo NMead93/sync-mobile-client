@@ -35,22 +35,37 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="AddPreferencePage.xaml.cs">
+      <DependentUpon>AddPreferencePage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Data\PreferenceLocalDb.cs" />
+    <Compile Include="Data\DataSyncManager.cs" />
+    <Compile Include="Data\ICUDDataStore.cs" />
+    <Compile Include="Data\LocalCUDStore.cs" />
+    <Compile Include="Data\LocalDb.cs" />
     <Compile Include="Data\RestService.cs" />
     <Compile Include="Details.xaml.cs">
       <DependentUpon>Details.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\ICustomDeserialize.cs" />
+    <Compile Include="Helpers\LocalCustomDeserialize.cs" />
+    <Compile Include="Helpers\RecordIdHelper.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Models\CUD.cs" />
+    <Compile Include="Models\ICUDEntity.cs" />
+    <Compile Include="Models\ISyncItem.cs" />
+    <Compile Include="Models\LocalSyncItem.cs" />
     <Compile Include="Models\SyncInfo.cs" />
     <Compile Include="Models\SyncTime.cs" />
+    <Compile Include="Models\UserArticleStatus.cs" />
     <Compile Include="Models\UserPreference.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SyncEnums\Enums.cs" />
+    <Compile Include="ViewModels\AddPreferencePageViewModel.cs" />
     <Compile Include="ViewModels\DetailsViewModel.cs" />
     <Compile Include="ViewModels\MainPageViewModel.cs" />
   </ItemGroup>
@@ -116,6 +131,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Details.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AddPreferencePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
